@@ -1,0 +1,18 @@
+<br>
+<br>
+
+<div>
+	<ol>
+		<ul ng-repeat='item in menu.found'>
+		<br>
+			Name: {{item.name}} <br>
+			Short Name: {{item.short_name}} <br>
+			Description: {{item.description}} <br>
+			<button class="btn btn-primary" ng-click="menu.onRemove({index: $index})">
+				Don't want this one!</button>
+		</ul>
+	</ol>
+</div>
+<div ng-if="menu.empty" class="errorMessage">
+	{{menu.empty}}
+</div>
