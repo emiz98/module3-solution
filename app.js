@@ -69,7 +69,7 @@
         var completeMenu = response.data.menu_items;
         for (var i = 0; i < completeMenu.length; i++) {
           var description = completeMenu[i].description;
-            if (description.toLowerCase().indexOf(searchTerm) >=0) {
+            if (description.toLowerCase().indexOf(searchTerm.toLowerCase()) >=0) {
               foundItems.push(completeMenu[i]);
             }
         }
