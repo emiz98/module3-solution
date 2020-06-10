@@ -38,6 +38,7 @@
         MenuSearchService.getMatchedMenuItems(searchTerm)
         .then(function (response) {
           menu.found = response;
+          menu.empty="";
             if (menu.found.length==0) {
               menu.empty="Nothing found";
             }
